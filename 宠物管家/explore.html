@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>基于IoT技术的智能宠物管家</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+	<body>
+		<div class="general">
+			<div class="head">
+				<div class="title">
+					宠物管家
+				</div>
+				<div class="info">
+					<div class="name">
+						探索
+					</div>
+					<!-- <div class="edit_btn">
+						<div class="btn_style">
+							编辑
+						</div>
+					</div> -->
+				</div>
+				<!-- <div class="status">
+					设备目前连接正常
+				</div> -->
+			</div>
+			<div class="content">
+				<script src="js/swiper.min.js"></script>
+				<div class="sub_title" style="height: 600px;padding-left: 0rem;">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="overflow: hidden;"><img src="img/s1.jpg" style="width: 100%;"></div>
+							<div class="swiper-slide" style="overflow: hidden;"><img src="img/s2.jpg" style="width: 100%;"></div>
+							<div class="swiper-slide" style="overflow: hidden;"><img src="img/s3.jpg" style="width: 100%;"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="sub_fun" id="usr" style="height: 700px;">
+					<div class="usr_li">
+						<div class="usr_pic">
+							<a href="social_info.html">
+								<img src="img/usr1.jpg" style="width: 100%;border-radius: 100%;">
+							</a>
+						</div>
+						<div class="usr_intro">
+							<p style="width: 100%;text-align: center;">养法斗的小姐姐:</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我家有个小可爱我家有个小可爱我家有个小可爱我家有个小可爱我家有个小可爱</p>
+						</div>
+					</div>
+					<div class="usr_li">
+						<div class="usr_pic">
+							<img src="img/usr2.jpg" style="width: 100%;border-radius: 100%;">
+						</div>
+						<div class="usr_intro">
+							<p style="width: 100%;text-align: center;">养萨摩的小哥哥:</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我家有个小可爱我家有个小可爱我家有个小可爱我家有个小可爱我家有个小可爱</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tabbar">
+			<div class="bot_icon">
+				<!-- <div class="pic">
+						<img src="img/control.png" style="height: 90%;">
+					</div> -->
+				<!-- <div class="text">
+						控制
+					</div> -->
+				<a href="index.html">
+					<img src="img/control.png" style="width: 55%;margin-top: -10px;">
+				</a>
+			</div>
+			<div class="bot_icon">
+				<a href="explore.html">
+					<img src="img/explore.png" style="width: 55%;margin-top: -10px;">
+				</a>
+			</div>
+			<div class="bot_icon">
+				<a href="info.html">
+					<img src="img/info.png" style="width: 55%;margin-top: -10px;">
+				</a>
+			</div>
+		</div>
+		</div>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				// direction: 'vertical', // 垂直切换选项
+				loop: true, // 循环模式选项
+				autoplay: {
+					delay: 3000,
+					stopOnLastSlide: false,
+					disableOnInteraction: false,
+				},
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			})
+		</script>
+	</body>
+</html>
